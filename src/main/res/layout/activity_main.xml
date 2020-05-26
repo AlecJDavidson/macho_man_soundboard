@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/macho_man_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/play_oh_yeah"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yellow_button"
+        android:text="Oh Yeah!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/play_tower"
+        app:layout_constraintEnd_toStartOf="@+id/play_tower"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_tower"
+        tools:text="Oh Yeah!" />
+
+    <Button
+        android:id="@+id/play_tower"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yellow_button"
+        android:text="Tower of Power!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/play_freak"
+        app:layout_constraintEnd_toStartOf="@+id/play_freak"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/play_oh_yeah"
+        app:layout_constraintTop_toTopOf="@+id/play_freak"
+        tools:text="Tower of Power!" />
+
+    <Button
+        android:id="@+id/play_freak"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="131dp"
+        android:background="@drawable/yellow_button"
+        android:text="Freakout!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play_cream"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/play_tower"
+        tools:text="Freakout!" />
+
+    <Button
+        android:id="@+id/play_cream"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yellow_button"
+        android:text="Cream of the Crop!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/play_freak"
+        app:layout_constraintEnd_toStartOf="@+id/play_macho_man"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/play_freak"
+        app:layout_constraintTop_toTopOf="@+id/play_freak"
+        tools:text="Cream of the Crop!" />
+
+    <Button
+        android:id="@+id/play_macho_man"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yellow_button"
+        android:text="Macho Man!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/play_cream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/play_cream"
+        app:layout_constraintTop_toTopOf="@+id/play_cream"
+        tools:text="Macho Man!" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
